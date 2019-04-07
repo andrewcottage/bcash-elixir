@@ -11,15 +11,8 @@ defmodule Bcash.MixProject do
       lockfile: "./mix.lock",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
-    ]
-  end
-
-  defp package do
-    [
-      licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/andrewcottage/bcash-elixir"},
-      maintainers: ["Andrew Cottage"],
+      deps: deps(),
+      package: package(),
       description: "Bcash API wrapper in Elixir."
     ]
   end
@@ -39,6 +32,14 @@ defmodule Bcash.MixProject do
       {:poison, "~> 3.0"},
       {:ex_doc, "~> 0.19", only: :dev, runtime: false},
       {:elixir_uuid, "~> 1.2"}
+    ]
+  end
+
+  defp package do
+    [
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/andrewcottage/bcash-elixir"},
+      maintainers: ["Andrew Cottage"]
     ]
   end
 end
