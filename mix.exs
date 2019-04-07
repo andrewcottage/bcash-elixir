@@ -13,7 +13,8 @@ defmodule Bcash.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
-      description: "Bcash API wrapper in Elixir."
+      description: "Bcash API wrapper in Elixir.",
+      test_coverage: [tool: ExCoveralls]
     ]
   end
 
@@ -31,7 +32,8 @@ defmodule Bcash.MixProject do
       {:exvcr, "~> 0.10", only: :test},
       {:poison, "~> 3.0"},
       {:ex_doc, "~> 0.19", only: :dev, runtime: false},
-      {:elixir_uuid, "~> 1.2"}
+      {:elixir_uuid, "~> 1.2"},
+      {:excoveralls, "~> 0.10", only: :test}
     ]
   end
 
