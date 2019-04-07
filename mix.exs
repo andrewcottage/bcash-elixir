@@ -15,6 +15,7 @@ defmodule Bcash.MixProject do
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/andrewcottage/bcash-elixir"},
       maintainers: ["Andrew Cottage"],
+      description: "Bcash API wrapper in Elixir."
     ]
   end
 
