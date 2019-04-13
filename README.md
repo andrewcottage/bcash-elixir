@@ -21,6 +21,7 @@ Install and start a bcash server here https://github.com/bcoin-org/bcash
 Setup your configuration like this
 ```
 config :bcash, [
+  host: "localost",
   api_key: 12345678,
   port: 18334,
   fee: 1000
