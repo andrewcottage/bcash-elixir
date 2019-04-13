@@ -1,7 +1,7 @@
 # Bcash
 [![Coverage Status](https://coveralls.io/repos/github/andrewcottage/bcash-elixir/badge.svg?branch=master)](https://coveralls.io/github/andrewcottage/bcash-elixir?branch=master)
 
-**TODO: Add description**
+Bcash is an API wrapper for the bcash Bitcoin Cash implementation.
 
 ## Installation
 
