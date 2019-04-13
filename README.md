@@ -16,8 +16,27 @@ def deps do
 end
 ```
 
+Install and start a bcash server here https://github.com/bcoin-org/bcash
+
+Setup your configuration like this
+```
+config :bcash, [
+  api_key: 12345678,
+  port: 18334,
+  fee: 1000
+]
+```
+
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/bcash](https://hexdocs.pm/bcash).
 
 # bcash-elixir
+
+You can call into Bcash like this
+
+```
+Bcash.create_wallet(wallet_id, passphrase)
+```
+
+List of all functions are here https://hexdocs.pm/bcash/Bcash.html#summary
